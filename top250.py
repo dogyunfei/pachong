@@ -14,8 +14,8 @@ obj=re.compile(r'<li>.*?<span class="title">(?P<name>.*?)'
 result=obj.finditer(pageContent)
 for i in result:
     print(i.group('name'))
-    # print(i.group('year'))
-    # print(i.group('score'))
-    # print(i.group('comment'))
+    print(i.group('year'))
+    print(i.group('score'))
+    print(i.group('comment'))
 print('over')
 response.close()
