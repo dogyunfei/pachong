@@ -1,9 +1,5 @@
 from selenium.webdriver import Chrome
-
-web=Chrome()
-
-web.get("http://www.baidu.com")
-
-print(web.title)
-
-web.close()
+web=Chrome()    #打开谷歌浏览器
+web.get("http://www.baidu.com")     #访问网址
+print(web.title)    #获取标题
+web.close()     #关闭网页

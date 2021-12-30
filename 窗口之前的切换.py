@@ -6,7 +6,6 @@ web = Chrome()
 url = 'http://lagou.com'
 web.get(url=url)
 web.find_element(By.XPATH, '//*[@id="changeCityBox"]/p[1]/a').click()
-
 web.find_element(By.XPATH, '//*[@id="search_input"]').send_keys('python', Keys.ENTER)
 
 # 新窗口
