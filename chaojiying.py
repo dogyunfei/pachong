@@ -5,6 +5,7 @@ import requests
 from hashlib import md5
 
 
+
 class Chaojiying_Client(object):
 
     def __init__(self, username, password, soft_id):
@@ -45,7 +46,7 @@ class Chaojiying_Client(object):
         }
         params.update(self.base_params)
         r = requests.post('http://upload.chaojiying.net/Upload/ReportError.php', data=params, headers=self.headers)
-        return r.json()
+        return r.json() 
 
 
 if __name__ == '__main__':

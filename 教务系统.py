@@ -27,7 +27,7 @@ time.sleep(2)
 web.find_element(By.XPATH,'//*[@id="txtSecretCode"]').send_keys(f'{verify_code}')
 
 # #点击登录
-# time.sleep(1)
-# web.find_element(By.XPATH,'//*[@id="Button1"]').send_keys(Keys.ENTER)
+web.find_element(By.XPATH,'//*[@id="Button1"]').send_keys(Keys.ENTER)
+time.sleep(1000)
 
 
